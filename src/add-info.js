@@ -1,8 +1,21 @@
 import React, { Component } from "react";
 import "./App.css";
-import TalkDropdown from "./talk-dropdown";
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.updateData = this.updateData.bind(this);
+  }
+
+  state = {
+    talks: [],
+    speaker: {}
+  };
+
+  updateData() {
+    localStorage.setItem("rock-the-stage", JSON.stringify(this.state));
+  }
+
   render() {
     return (
       <div className="App">
@@ -10,7 +23,7 @@ class App extends Component {
           <h1 className="App-title">Rock the Stage</h1>
         </header>
         <p className="App-intro">Import JSON component</p>
-        <TalkDropdown />
+        <p>Select and populate component</p>
       </div>
     );
   }
