@@ -24,11 +24,9 @@ class App extends Component {
     }
 
     if (val === "add") {
-      update.addOpen = !update.addOpen;
       update.fillOpen = false;
+      update.addOpen = !update.addOpen;
     }
-
-    console.log(update);
 
     this.setState(update);
   }
