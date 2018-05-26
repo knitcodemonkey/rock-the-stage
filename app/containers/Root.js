@@ -3,7 +3,6 @@ import { Provider } from 'react-redux';
 import App from './App';
 
 export default class Root extends Component {
-
   static propTypes = {
     store: PropTypes.object.isRequired
   };

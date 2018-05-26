@@ -65,7 +65,8 @@ const baseDevConfig = () => ({
         }
       ]
     }]
-  }
+  },
+  mode: 'development'
 });
 
 const injectPageConfig = baseDevConfig();

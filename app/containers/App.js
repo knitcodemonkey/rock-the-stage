@@ -15,7 +15,6 @@ import style from './App.css';
   })
 )
 export default class App extends Component {
-
   static propTypes = {
     todos: PropTypes.array.isRequired,
     actions: PropTypes.object.isRequired
