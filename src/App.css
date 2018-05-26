@@ -1,16 +1,19 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.App {
+  margin: 0;
+  padding: 0;
+  min-width: 240px;
+  max-width: 300px;
 }
 
 .App-header {
   background-color: #222;
-  padding: 20px;
+  padding: 10px;
   color: white;
+  text-align: center;
 }
 
 .App-title {
@@ -19,13 +22,42 @@
 
 .App-intro {
   font-size: large;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+main {
+  padding: 20px;
+  width: 100%;
+}
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+.form-container {
+  padding: 5px 0;
+}
+
+label {
+  display: block;
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+input,
+select {
+  font-size: 1rem;
+  margin: 5px 0;
+  width: 100%;
+}
+
+button {
+  font-size: 1rem;
+  margin: 5px 0;
+  padding: 5px 10px;
+  display: inline;
 }
