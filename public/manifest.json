@@ -1,10 +1,13 @@
 {
-  "short_name": "React App",
-  "name": "React Extension",
+  "short_name": "Rock the Stage",
+  "name": "Rock the Stage Chrome Extension",
+  "description":
+    "Easily fill out CFP google forms for applying for conferences.",
   "manifest_version": 2,
+  "permissions": ["storage", "activeTab"],
   "browser_action": {
     "default_popup": "index.html",
-    "default_title": "React Ext"
+    "default_title": "Rock the Stage"
   },
   "version": "1.0"
 }
