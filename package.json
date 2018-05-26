@@ -2,6 +2,17 @@
   "name": "rock-the-stage",
   "version": "0.1.0",
   "private": true,
+  "contributors": [
+    {
+      "name": "Jen Luker",
+      "email": "knittingcodemonkey@gmail.com",
+      "url": "http://jenluker.com"
+    },
+    {
+      "name": "Sara Vieira",
+      "url": "https://github.com/SaraVieira"
+    }
+  ],
   "dependencies": {
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
