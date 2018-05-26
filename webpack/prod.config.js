@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const autoprefixer = require('autoprefixer');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 const customPath = path.join(__dirname, './customPublicPath');
 
@@ -18,11 +19,9 @@ module.exports = {
   plugins: [
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.IgnorePlugin(/[^/]+\/[\S]+.dev$/),
-    new webpack.optimize.UglifyJsPlugin({
-      comments: false,
-      compressor: {
-        warnings: false
-      }
+    new UglifyJsPlugin({
+      parallel: 8,
+      cache: true
     }),
     new webpack.DefinePlugin({
       'process.env': {

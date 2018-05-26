@@ -71,7 +71,9 @@
     "shelljs": "^0.8.2",
     "sinon": "^5.0.10",
     "style-loader": "^0.21.0",
+    "uglifyjs-webpack-plugin": "^1.2.5",
     "webpack": "^4.9.1",
+    "webpack-cli": "^2.1.4",
     "webpack-hot-middleware": "^2.22.2",
     "webpack-httpolyglot-server": "^0.3.0"
   },
